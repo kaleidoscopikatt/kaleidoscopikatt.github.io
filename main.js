@@ -1,6 +1,7 @@
-﻿document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     const send = document.getElementById("send");
     send.addEventListener("click", (e) => {
+        console.log("Updated!");
         const options = {
             method: 'POST',
             body: JSON.stringify({
@@ -12,7 +13,7 @@
             },
         }
 
-        fetch('https://script.google.com/macros/s/AKfycbzhPCk_rGQP87mFAlVO3grNVrCtdtrPmabQfs1fqA/exec', options)
+        fetch('https://script.google.com/macros/s/AKfycbzEKjbrZypNdK5KIupviqZrdamM5InSRwAH6CcSeYtz_OG6Gp6RNm9aCkqNTcmENH8/exec', options)
             .then(response => response.text())
             .then(data => console.log('Success:', data))
             .catch(error => console.error('Error:', error));
